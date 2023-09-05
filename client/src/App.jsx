@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import ActionCard from "./components/reusablecomponent/ActionCard"
 import { CatContext } from "./context/CatContext"
 import ActionCardWithInfo from "./components/reusablecomponent/ActionCardWithInfo"
@@ -12,11 +12,12 @@ import Footer from "./components/Footer"
 
 function App() {
   const { data, setData } = useContext(CatContext)
+  const [selectedOption, setSelectedOption] = useState('')
 
   // console.log(data)
   return (
     <div>
-      <Header />
+      <Header selectedOption={selectedOption} setSelectedOption={setSelectedOption } />
       <MostSearched />
       <Reason />
       <Footer/>

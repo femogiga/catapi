@@ -62,6 +62,10 @@ a {
   flex-wrap: wrap;
 }
 
+.row-gap-1 {
+  row-gap: 1rem;
+}
+
 .row-gap-2 {
   row-gap: 2rem;
 }
@@ -114,6 +118,10 @@ a {
 
 .pad-row-1 {
   padding-inline: 2rem
+}
+
+.bold{
+  font-weight: bold;
 }
 
 /* ******************************************************************** */

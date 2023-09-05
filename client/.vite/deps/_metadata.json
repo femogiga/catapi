@@ -1,0 +1,89 @@
+{
+  "hash": "7cd84c00",
+  "browserHash": "caf98999",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c2b43376",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "0af4e7b4",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "5bb730bd",
+      "needsInterop": false
+    },
+    "@mui/material/Card": {
+      "src": "../../node_modules/@mui/material/Card/index.js",
+      "file": "@mui_material_Card.js",
+      "fileHash": "4b6e7815",
+      "needsInterop": false
+    },
+    "@mui/material/CardActions": {
+      "src": "../../node_modules/@mui/material/CardActions/index.js",
+      "file": "@mui_material_CardActions.js",
+      "fileHash": "1fd39623",
+      "needsInterop": false
+    },
+    "@mui/material/CardContent": {
+      "src": "../../node_modules/@mui/material/CardContent/index.js",
+      "file": "@mui_material_CardContent.js",
+      "fileHash": "cc735ce7",
+      "needsInterop": false
+    },
+    "@mui/material/CardMedia": {
+      "src": "../../node_modules/@mui/material/CardMedia/index.js",
+      "file": "@mui_material_CardMedia.js",
+      "fileHash": "a6c2e184",
+      "needsInterop": false
+    },
+    "@mui/material/Typography": {
+      "src": "../../node_modules/@mui/material/Typography/index.js",
+      "file": "@mui_material_Typography.js",
+      "fileHash": "cc569b68",
+      "needsInterop": false
+    },
+    "@mui/material/TextField": {
+      "src": "../../node_modules/@mui/material/TextField/index.js",
+      "file": "@mui_material_TextField.js",
+      "fileHash": "4002e7c4",
+      "needsInterop": false
+    },
+    "@mui/material/Autocomplete": {
+      "src": "../../node_modules/@mui/material/Autocomplete/index.js",
+      "file": "@mui_material_Autocomplete.js",
+      "fileHash": "279fd701",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MCBHL54H": {
+      "file": "chunk-MCBHL54H.js"
+    },
+    "chunk-DZXRV6RW": {
+      "file": "chunk-DZXRV6RW.js"
+    },
+    "chunk-AYOQC5U7": {
+      "file": "chunk-AYOQC5U7.js"
+    },
+    "chunk-W27C7YG7": {
+      "file": "chunk-W27C7YG7.js"
+    },
+    "chunk-GOAYLLVH": {
+      "file": "chunk-GOAYLLVH.js"
+    },
+    "chunk-ZAUFE7H7": {
+      "file": "chunk-ZAUFE7H7.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}

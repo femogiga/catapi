@@ -11,5 +11,11 @@ const get = (url) => {
     })
 }
 
+const create = (url, data) => {
+    return axios.post(`${baseUrl}${url}`, data)
 
-export default {get}
+
+}
+
+
+export default {get,create}
