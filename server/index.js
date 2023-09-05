@@ -5,6 +5,7 @@ const catRoute = require('./routes/carRoute.js')
 
 const app = express()
 app.use(morgan('tiny'))
+app.use(express.json())
 app.use(cors())
 app.use('/cats' , catRoute)
 app.get('/', (req, res) => {
