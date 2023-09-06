@@ -6,6 +6,7 @@ import { CatContext } from "../context/CatContext"
 import { useParams } from "react-router"
 import apiService from "../apiService"
 import Footer from "../components/Footer"
+import { Link } from "react-router-dom"
 
 const Information = () => {
     const [photos, setPhotos] = useState([])
@@ -26,15 +27,15 @@ const Information = () => {
             <Logo />
             <div className="flex gap-2">
                 <div>
-                    <ActionCard src={displayedCat[0]?.image?.url} />
+                    <ActionCard width={'23rem'} height={'23rem'} src={displayedCat[0]?.image?.url} />
                 </div>
                 <div className="flex flex-col row-gap-1 flow-3">
                     <h2 style={{ width: '40%' }}>{displayedCat[0]?.name}</h2>
                     <p>{displayedCat[0]?.description}</p>
 
-                    <p><span className="bold">Temperature:</span></p>
-                    <p><span className="bold">Origin:</span></p>
-                    <p><span className="bold">Life Span:</span></p>
+                    <p><span className="bold">Temperament:</span> {displayedCat[0]?.temperament}</p>
+                    <p><span className="bold">Origin: </span>{displayedCat[0]?.origin}</p>
+                    <p><span className="bold">Life Span: </span>{displayedCat[0]?.life_span} </p>
                     <Stats statTitle={'Adaptability'} stat={displayedCat[0]?.adaptability} />
                     <Stats statTitle={'Affection level'} stat={displayedCat[0]?.affection_level} />
                     <Stats statTitle={'Child Friendly'} stat={displayedCat[0]?.child_friendly} />
@@ -46,10 +47,10 @@ const Information = () => {
                 </div>
             </div>
             <div className="flow-3">
-                <p>Other photos</p>
+                <p className='flow-2'>Other photos</p>
                 <div className="flex flex-wrap  space-btw gap-2">
 
-                    {photos.map(photo => (<ActionCard width={'16rem'} height={'16rem'} key={photo.id} src={photo.url} />))}
+                    {photos.map((photo, index) => (<Link to={photo.url} key={index}><ActionCard width={'16rem'} height={'16rem'} key={photo.id} src={photo.url} /></Link>))}
                 </div>
             </div>
             <Footer />

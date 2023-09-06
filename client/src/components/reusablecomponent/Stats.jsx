@@ -13,7 +13,7 @@ const Stats = ({ statTitle, stat }) => {
         backgroundColor: '#E0E0E0',
         borderRadius: '8px',
     };
-
+    const index = 0
     const barBlue = <div style={barBlueStyle}></div>;
     const bar = <div style={barStyle}></div>;
     const arr = new Array(5);
@@ -21,10 +21,11 @@ const Stats = ({ statTitle, stat }) => {
 
     return (
         <div className='stat flex gap1 align-center'>
-            <p style={{ marginRight: '0rem', width: '30%',fontWeight:'bold' }}>{statTitle}</p>
+            <p style={{ marginRight: '0rem', width: '30%', fontWeight: 'bold' }}>{statTitle}</p>
             <div style={{ width: '100%', display: 'flex', gap: '1rem' }}>
                 {/* <div style={barStyle}></div> */}
-                {arr.map((item, index) => (index < stat ? bar : barBlue))}
+                {/* {arr.map((item, index) => (index < stat ? bar : barBlue))} */}
+                {arr.map((item, index) => (index < stat ? <div key={index} style={barStyle}></div> : <div key={index} style={barBlueStyle}></div>))}
             </div>
         </div>
     );
