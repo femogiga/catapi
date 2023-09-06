@@ -24,7 +24,7 @@ const MostSearched = () => {
                     </div>
                     <div className='flex space-btw cg-2 flex-wrap' style={{ maxWidth: '100%' }}>
                         {
-                            mapped.map(cat => (<Link to={cat.id} key={cat.id}><ActionCard key={cat.id} withText={true} height={'12rem'} width={'12rem'} src={cat?.image?.url} breed={cat?.name} /></Link>))}
+                            mapped.map(cat => (<Link to={cat.id} key={cat.id}><ActionCard key={cat.id} withText={true} height={'10rem'} width={'10rem'} src={cat?.image?.url} breed={cat?.name} /></Link>))}
 
                     </div>
 

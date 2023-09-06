@@ -7,8 +7,9 @@ html {
 img {
   max-width: 100%;
 }
-.app{
-  width:100%
+
+.app {
+  width: 100%
 }
 
 *,
@@ -30,7 +31,7 @@ body {
 a {
   text-decoration: none;
   color: initial;
- 
+
 
 }
 
@@ -79,6 +80,7 @@ a {
 .cg-2 {
   column-gap: 2rem;
 }
+
 .cg-3 {
   column-gap: 3rem;
 }
@@ -129,7 +131,7 @@ a {
   padding-inline: 2rem
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -203,16 +205,17 @@ a {
 
 }
 
-.seemore{
+.seemore {
   text-align: end;
-  width:15%;
+  width: 15%;
 }
 
 .reason {
   padding: 2rem 4rem;
 
 }
-.reason article:first-child{
+
+.reason article:first-child {
   width: 30%;
 }
 
@@ -225,26 +228,27 @@ a {
 
 
 
-.card img{
+.card img {
   /* min-width: 122px; */
-  border-radius:14px;
+  border-radius: 14px;
   object-fit: cover;
 
 }
 
-@media screen  and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
 
-  .mostsearched{
-    padding:unset
-  }
-  .reason article:first-child{
-    width:100%;
+  .mostsearched {
+    padding: unset
   }
 
-  .seemore{
+  .reason article:first-child {
+    width: 100%;
+  }
+
+  .seemore {
     text-align: initial;
-    width:100%
+    width: 100%
   }
 
 
@@ -254,25 +258,26 @@ a {
 }
 
 @media screen and (max-width: 710px) {
-  body{
+  body {
     padding: 1rem;
   }
 
 
-  .reason{
-    padding:unset;
+  .reason {
+    padding: unset;
 
-    width:100%
+    width: 100%
   }
 
-  .reason img{
-    width:100%
+  .reason img {
+    width: 100%
   }
+
   /* .footer-media{
     justify-content: flex-start;
     width:100%;
   } */
-/*
+  /*
   /* .mostsearched h2{
     width:100%;
   } */
@@ -286,26 +291,26 @@ a {
     padding: 0.4rem;
   }
 
-     .form {
-       padding: unset;
-       padding: 2rem .5rem;
-      background: url("./cat/HeroImagesm.png");
-      background-position: 50% 60%;
+  .form {
+    padding: unset;
+    padding: 2rem .5rem;
+    background: url("./cat/HeroImagesm.png");
+    background-position: 50% 60%;
 
-     }
+  }
 
-     .form .MuiAutocomplete-root {
-      width:50%
-     }
+  .form .MuiAutocomplete-root {
+    width: 50%
+  }
 
-     .form picture img{
-      width:50%
-     }
+  .form picture img {
+    width: 50%
+  }
 
-     .form> input{
-      width:5rem;
+  .form>input {
+    width: 5rem;
 
-     }
+  }
 
 
 
@@ -317,11 +322,15 @@ a {
 @media screen and (max-width: 360px) {
 
   .form {
-      padding: unset;
-      padding: 2rem .5rem;
-      background: url("./cat/HeroImagesm.png");
-  background-position:50% 60%;
-}
+    padding: unset;
+    padding: 2rem .5rem;
+    background: url("./cat/HeroImagesm.png");
+    background-position: 50% 60%;
+  }
+
+  .cg-media {
+    column-gap: .6rem;
+  }
 
 }
 

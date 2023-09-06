@@ -21,7 +21,7 @@ const Reason = () => {
                 <p><Link to={url}>READ MORE </Link><span>&#8594;</span></p>
             </article>
             <article >
-                <div className="flex cg-2">
+                <div className=" cg-media flex cg-2">
                     <div className="flex flex-col space-btw two ">
                         <ActionCard width='17rem' height='10rem' src={secondImage} />
                         <div style={{ marginLeft:'auto' }}>
