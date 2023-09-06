@@ -71,6 +71,17 @@ const getCount = async (req, res) => {
         res.status(200).json('Internal server error')
     }
 }
+const getPhotos = async (req, res) => {
+    const id = req.params.id
+    try {
+        const response = await axios.get(`https://api.thecatapi.com/v1/images/search?limit=8&breed_ids=${id}&api_key=${apikey}`)
+        const result = await response.data
+        // console.log(result)
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
 
 
-module.exports = { getAll, create, getById, getCount }
+module.exports = { getAll, create, getById, getCount, getPhotos }

@@ -1,27 +1,34 @@
-import { useContext, useEffect } from "react"
+import { useContext, useEffect, useState } from "react"
 import ActionCard from "./reusablecomponent/ActionCard"
 import Logo from "./reusablecomponent/Logo"
 import Stats from "./reusablecomponent/Stats"
 import { CatContext } from "../context/CatContext"
 import { useParams } from "react-router"
+import apiService from "../apiService"
+import Footer from "../components/Footer"
 
 const Information = () => {
+    const [photos, setPhotos] = useState([])
     const params = useParams()
     const { data, setData } = useContext(CatContext)
     const displayedCat = data.filter(item => item.id === params.id)
 
     console.log('toDisplayed', displayedCat)
     useEffect(() => {
-
+        apiService.get(`/cats/photos/${params.id}`)
+            .then(res => res.data)
+            .then(res => setPhotos(res))
+            .catch(err => console.error(err))
     }, [params])
+    console.log('photos', photos)//
     return (
-        <section>
+        <section className="information">
             <Logo />
             <div className="flex gap-2">
                 <div>
                     <ActionCard src={displayedCat[0]?.image?.url} />
                 </div>
-                <div className="flex flex-col row-gap-1">
+                <div className="flex flex-col row-gap-1 flow-3">
                     <h2 style={{ width: '40%' }}>{displayedCat[0]?.name}</h2>
                     <p>{displayedCat[0]?.description}</p>
 
@@ -38,6 +45,14 @@ const Information = () => {
                     <Stats statTitle={'Stranger friendly'} stat={displayedCat[0]?.stranger_friendly} />
                 </div>
             </div>
+            <div className="flow-3">
+                <p>Other photos</p>
+                <div className="flex flex-wrap  space-btw gap-2">
+
+                    {photos.map(photo => (<ActionCard width={'16rem'} height={'16rem'} key={photo.id} src={photo.url} />))}
+                </div>
+            </div>
+            <Footer />
         </section>
     )
 }

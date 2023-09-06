@@ -13,7 +13,7 @@ export default function ActionCard({ withText, width, height, src, breed }) {
     breed = breed || 'cat'
     width = width || '220px'
     return (
-        <div className = 'actioncard' style={{ width: '100%' }}>
+        <div className = 'actioncard' style={{  }}>
             <Card sx={{ width: { width }, height: height, marginBlockEnd: '1rem', borderRadius: '13px' }}>
 
                 <CardMedia
