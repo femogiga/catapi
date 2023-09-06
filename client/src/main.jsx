@@ -4,8 +4,10 @@ import App from './App.jsx'
 import './index.css'
 import CatProvider from './context/CatContext.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Stats from './components/reusablecomponent/Stats.jsx'
+
 import Information from './components/Information.jsx'
+
+import TopTen from './components/TopTen.jsx'
 
 
 
@@ -15,6 +17,7 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/:id" element={<Information />} />
+        <Route path="/mostsearched" element={<TopTen />} />
       </Routes>
     </BrowserRouter>
   )

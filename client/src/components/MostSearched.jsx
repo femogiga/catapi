@@ -20,7 +20,7 @@ const MostSearched = () => {
                     <p>Most Searched Breeds</p>
                     <div className="flex space-btw gap-2 pad-row-2">
                         <h2 style={{ width: '40%', fontSize: '2.8rem' }}>66+ Breeds For you to discover</h2>
-                        <p style={{ width: '40%', textAlign: 'end', paddingInlineEnd: '0rem' ,alignSelf:'flex-end'}}>SEE MORE</p>
+                        <p style={{ width: '40%', textAlign: 'end', paddingInlineEnd: '0rem', alignSelf: 'flex-end' }}><Link>SEE MORE</Link></p>
                     </div>
                     <div className='flex space-btw cg-2' style={{ maxWidth: '100%' }}>
                         {
