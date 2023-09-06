@@ -2,6 +2,7 @@ import { useContext } from "react"
 import ActionCardWithInfo from "./reusablecomponent/ActionCardWithInfo"
 import Logo from "./reusablecomponent/Logo"
 import { CatContext } from "../context/CatContext"
+import Footer from "./Footer"
 
 const TopTen = () => {
 
@@ -16,6 +17,7 @@ const TopTen = () => {
             {
                 topTen.map((cat, index) => <ActionCardWithInfo key={cat?.id} {...cat} index={index + 1} />)
             }
+            <Footer />
         </div>
     )
 }

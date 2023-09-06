@@ -18,13 +18,13 @@ const MostSearched = () => {
             <Container>
                 <article className="flex flex-col row-gap-2 col-gap2">
                     <p>Most Searched Breeds</p>
-                    <div className="flex space-btw gap-2 pad-row-2">
-                        <h2 style={{ width: '40%', fontSize: '2.8rem' }}>66+ Breeds For you to discover</h2>
-                        <p style={{ width: '40%', textAlign: 'end', paddingInlineEnd: '0rem', alignSelf: 'flex-end' }}><Link>SEE MORE</Link></p>
+                    <div className="flex space-btw gap-2 pad-row-2 flex-wrap">
+                        <h2 style={{ fontSize: '2.8rem' }}>66+ Breeds For you to discover</h2>
+                        <p className="seemore" style={{ paddingInlineEnd: '0rem', alignSelf: 'flex-end' }}><Link to={'/mostsearched'}>SEE MORE <span>&#8594;</span></Link></p>
                     </div>
-                    <div className='flex space-btw cg-2' style={{ maxWidth: '100%' }}>
+                    <div className='flex space-btw cg-2 flex-wrap' style={{ maxWidth: '100%' }}>
                         {
-                            mapped.map(cat => (<Link to={cat.id} key={cat.id}><ActionCard key={cat.id} withText={true} height={'12.5rem'} width={'12rem'} src={cat?.image?.url} breed={cat?.name} /></Link>))}
+                            mapped.map(cat => (<Link to={cat.id} key={cat.id}><ActionCard key={cat.id} withText={true} height={'12rem'} width={'12rem'} src={cat?.image?.url} breed={cat?.name} /></Link>))}
 
                     </div>
 

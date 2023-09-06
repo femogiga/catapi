@@ -7,26 +7,31 @@ html {
 img {
   max-width: 100%;
 }
+.app{
+  width:100%
+}
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1280px;
   line-height: 1.3;
   margin-inline: auto;
   padding: 0rem 2rem;
- 
+
 }
 
 a {
   text-decoration: none;
-  color: initial
+  color: initial;
+ 
+
 }
 
 /* ****************************************************************** */
@@ -198,10 +203,18 @@ a {
 
 }
 
-.reason {
-  padding: 2rem 4rem;
+.seemore{
+  text-align: end;
+  width:15%;
 }
 
+.reason {
+  padding: 2rem 4rem;
+
+}
+.reason article:first-child{
+  width: 30%;
+}
 
 
 .footer {
@@ -212,6 +225,105 @@ a {
 
 
 
+.card img{
+  /* min-width: 122px; */
+  border-radius:14px;
+  object-fit: cover;
+
+}
+
+@media screen  and (max-width: 900px) {
+
+
+  .mostsearched{
+    padding:unset
+  }
+  .reason article:first-child{
+    width:100%;
+  }
+
+  .seemore{
+    text-align: initial;
+    width:100%
+  }
+
+
+
+
+
+}
+
+@media screen and (max-width: 710px) {
+  body{
+    padding: 1rem;
+  }
+
+
+  .reason{
+    padding:unset;
+
+    width:100%
+  }
+
+  .reason img{
+    width:100%
+  }
+  /* .footer-media{
+    justify-content: flex-start;
+    width:100%;
+  } */
+/*
+  /* .mostsearched h2{
+    width:100%;
+  } */
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0.4rem;
+  }
+
+     .form {
+       padding: unset;
+       padding: 2rem .5rem;
+      background: url("./cat/HeroImagesm.png");
+      background-position: 50% 60%;
+
+     }
+
+     .form .MuiAutocomplete-root {
+      width:50%
+     }
+
+     .form picture img{
+      width:50%
+     }
+
+     .form> input{
+      width:5rem;
+
+     }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+  .form {
+      padding: unset;
+      padding: 2rem .5rem;
+      background: url("./cat/HeroImagesm.png");
+  background-position:50% 60%;
+}
+
+}
 
 
 

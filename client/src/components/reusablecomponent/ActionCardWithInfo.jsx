@@ -4,9 +4,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
+
 function ActionCardWithInfo(props, src) {
     const { description, name, index } = props
     src = props.image.url || "https://images.pexels.com/photos/18175120/pexels-photo-18175120/free-photo-of-ave.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+   
+
+
 
 
 

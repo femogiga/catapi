@@ -50,7 +50,7 @@ const Information = () => {
                 <p className='flow-2'>Other photos</p>
                 <div className="flex flex-wrap  space-btw gap-2">
 
-                    {photos.map((photo, index) => (<Link to={photo.url} key={index}><ActionCard width={'16rem'} height={'16rem'} key={photo.id} src={photo.url} /></Link>))}
+                    {photos.map((photo, index) => (<Link to={photo.url} key={index} style={{ display: 'content' }}><ActionCard width={'10rem'} height={'12rem'} key={photo.id} src={photo.url} /></Link>))}
                 </div>
             </div>
             <Footer />

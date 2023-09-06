@@ -1,7 +1,7 @@
 
 import Card from '@mui/material/Card';
 
-import CardMedia from '@mui/material/CardMedia';
+
 import Typography from '@mui/material/Typography';
 
 
@@ -12,21 +12,22 @@ export default function ActionCard({ withText, width, height, src, breed }) {
     height = height || '220px'
     breed = breed || 'cat'
     width = width || '220px'
-    return (
-        <div className = 'actioncard' style={{  }}>
-            <Card sx={{ width: { width }, height: height, marginBlockEnd: '1rem', borderRadius: '13px' ,display:'flex'}}>
 
-                <CardMedia
-                    component="img"
-                    image={src}
+
+    return (
+        <div className='actioncard' style={{}}>
+            <div className="card" style={{ height: height, marginBlockEnd: '1rem', display: 'flex', objectFit: 'cover' }}>
+
+                <img
+                    src={src}
                     alt="green iguana"
-                    sx={{ objectFit: 'cover' }}
+                    style={{ maxWidth: { width }, width: { width } }}
                 />
 
-            </Card>
-            {withText && <Typography gutterBottom variant="h5" component="div">
+            </div>
+            {withText && <p>
                 {breed}
-            </Typography>}
+            </p>}
         </div>
     );
 }
