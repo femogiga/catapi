@@ -73,6 +73,9 @@ a {
 .cg-2 {
   column-gap: 2rem;
 }
+.cg-3 {
+  column-gap: 3rem;
+}
 
 .gap-2 {
   gap: 2rem;
@@ -197,6 +200,8 @@ a {
 .reason {
   padding: 2rem 4rem;
 }
+
+
 
 .footer {
   border-top-left-radius: 30px;

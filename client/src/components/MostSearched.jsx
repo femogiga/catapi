@@ -19,8 +19,8 @@ const MostSearched = () => {
                 <article className="flex flex-col row-gap-2 col-gap2">
                     <p>Most Searched Breeds</p>
                     <div className="flex space-btw gap-2 pad-row-2">
-                        <h2 style={{ width: '40%' }}>66+ Breeds For you to discover</h2>
-                        <p style={{ width: '40%', textAlign: 'end', paddingInlineEnd: '2rem' }}>SEE MORE</p>
+                        <h2 style={{ width: '40%', fontSize: '2.8rem' }}>66+ Breeds For you to discover</h2>
+                        <p style={{ width: '40%', textAlign: 'end', paddingInlineEnd: '0rem' ,alignSelf:'flex-end'}}>SEE MORE</p>
                     </div>
                     <div className='flex space-btw cg-2' style={{ maxWidth: '100%' }}>
                         {

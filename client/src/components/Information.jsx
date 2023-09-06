@@ -25,7 +25,7 @@ const Information = () => {
     return (
         <section className="information">
             <Logo />
-            <div className="flex gap-2">
+            <div className="flex cg-3">
                 <div>
                     <ActionCard width={'23rem'} height={'23rem'} src={displayedCat[0]?.image?.url} />
                 </div>
