@@ -13,8 +13,8 @@ const Stats = ({ statTitle, stat }) => {
         backgroundColor: '#E0E0E0',
         borderRadius: '8px',
     };
-    const index = 0
-    const barBlue = <div style={barBlueStyle}></div>;
+
+    // const barBlue = <div style={barBlueStyle}></div>;
     const bar = <div style={barStyle}></div>;
     const arr = new Array(5);
     arr.fill(bar);

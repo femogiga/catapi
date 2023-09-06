@@ -14,13 +14,13 @@ export default function ActionCard({ withText, width, height, src, breed }) {
     width = width || '220px'
     return (
         <div className = 'actioncard' style={{  }}>
-            <Card sx={{ width: { width }, height: height, marginBlockEnd: '1rem', borderRadius: '13px' }}>
+            <Card sx={{ width: { width }, height: height, marginBlockEnd: '1rem', borderRadius: '13px' ,display:'flex'}}>
 
                 <CardMedia
                     component="img"
                     image={src}
                     alt="green iguana"
-
+                    sx={{ objectFit: 'cover' }}
                 />
 
             </Card>
