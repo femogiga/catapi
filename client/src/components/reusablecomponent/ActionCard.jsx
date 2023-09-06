@@ -15,13 +15,13 @@ export default function ActionCard({ withText, width, height, src, breed }) {
 
 
     return (
-        <div className='actioncard' style={{}}>
-            <div className="card" style={{ height: height, marginBlockEnd: '1rem', display: 'flex', objectFit: 'cover' }}>
+        <div className='actioncard'>
+            <div className="card" style={{  marginBlockEnd: '1rem', display:'flex' }}>
 
                 <img
                     src={src}
                     alt="green iguana"
-                    style={{ maxWidth: { width }, width: { width } }}
+                    style={{ maxWidth:  width  , height: height, objectFit: 'cover' }}
                 />
 
             </div>
