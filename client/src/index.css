@@ -372,6 +372,42 @@ a {
   }
 
 
+  .focussed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 23rem;
+    width: 100%;
+    padding-block: 7rem;
+    background-color: azure;
+    z-index: 3;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 0 3px #000;
+  }
+
+  .form .MuiAutocomplete-root {
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .MuiInputBase-root {
+    border-radius: 30px;
+  }
+
+  .form button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+
+
+
+
+
+
 
 }
 

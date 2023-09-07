@@ -47,7 +47,10 @@ const Header = (props) => {
                     <img src={logoTwo} />
                 </picture>
                 <p>Get to know more about your cat breed </p>
+                <div className='focussed'>
+                    <div><button style={{padding:'.5rem 1rem'}}>X</button></div>
                 <Autocomplete
+
                     disablePortal
                     id="combo-box-demo"
                     options={allBreeds}
@@ -58,7 +61,8 @@ const Header = (props) => {
 
                     }}
                     value={selectedOption}
-                />
+                    />
+                </div>
             </form>
         </Container>
 
