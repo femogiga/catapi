@@ -82,7 +82,7 @@ const Header = (props) => {
             })
             .catch(err => console.error(err))
         modalRef.current.classList.remove("reveal")
-        
+
     }
     return <header className='header '>
         <Container >
@@ -91,7 +91,7 @@ const Header = (props) => {
                 <picture>
                     <img src={logoTwo} />
                 </picture>
-                <p>Get to know more about your cat breed </p>
+                <p className="flow-2">Get to know more about your cat breed </p>
                 <div className='' ref={modalRef}>
                     {focusState && <div className="none"><button ref={buttonRef} style={{ padding: '.5rem 1rem' }}>X</button></div>}
                     <Autocomplete
