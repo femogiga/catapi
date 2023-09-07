@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:9000'
+// const baseUrl = 'http://localhost:9000'
+const baseUrl = "https://catwiki-wkdt.onrender.com"
 const apikey = 'live_iMUqJb7gjlT4vDMVIcb6qmUevcFeh246fAHXU0ijTVLgaXk1l4Eas68c9jsoaDhL';
 
 const get = (url) => {
@@ -18,4 +19,4 @@ const create = (url, data) => {
 }
 
 
-export default {get,create}
+export default { get, create }

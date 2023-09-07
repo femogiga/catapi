@@ -4,11 +4,17 @@ import Container from "./reusablecomponent/Container"
 import { CatContext } from "../context/CatContext"
 import { Link } from "react-router-dom"
 
+
 const MostSearched = () => {
     const { data, setData, count } = useContext(CatContext)
+    let cut
+    if (count.length > 0){
+         cut = count.slice(0, 4)
+    }
+
     const mapped = data.filter(item => {
-        return count.slice(0, 4).find(cat => {
-            return cat.searchword === item.name
+        return  cut.find(cat => {
+            return cat?.searchword === item?.name
         })
     })
 
