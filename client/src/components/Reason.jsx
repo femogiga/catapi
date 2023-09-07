@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Reason = () => {
     const url = "https://www.catonsvillecatclinic.com/holmes-corner/the-psychological-benefits-of-owning-a-cat/"
     return (
-        <div className='reason flex space-btw gap-2 pad-2 flex-wrap'>
+        <div className='reason flex space-btw gap-2 pad-2 flex-wrap pos-rel'>
 
             <article className="flex-col row-gap-2" style={{ display: 'flex' }}>
                 <h2 style={{ fontSize: '2.8rem' }}>Why should you have a cat?</h2>

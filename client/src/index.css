@@ -135,6 +135,12 @@ a {
   font-weight: bold;
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 0.3rem;
+}
+
 /* ******************************************************************** */
 .form {
   background-color: aqua;
@@ -205,6 +211,14 @@ a {
 
 }
 
+.reason::before {
+  content: "";
+  width: 5rem;
+  border: 4px solid black;
+  position: absolute;
+  top: 0rem
+}
+
 .seemore {
   text-align: end;
   width: 15%;
@@ -235,19 +249,21 @@ a {
 
 }
 
- .statbar {
-   width: 55%;
- }
+.statbar {
+  width: 55%;
+}
 
- .avatar {
-   width: 40%;
- }
+.avatar {
+  width: 40%;
+}
 
 @media screen and (max-width: 900px) {
 
 
   .mostsearched {
-    padding: unset
+    padding: unset;
+    padding-block: 2rem;
+
   }
 
   .reason article:first-child {
@@ -260,15 +276,18 @@ a {
   }
 
 
-     .statbar {
-       width: 100%;
-     }
+  .statbar {
+    width: 100%;
+  }
 
-     .avatar {
-       width: 100%;
-     }
+  .avatar {
+    width: 100%;
+  }
 
-
+  .pad-1-media {
+    justify-content: center;
+    padding-inline: .3rem;
+  }
 
 }
 
@@ -288,6 +307,7 @@ a {
     width: 100%
   }
 
+
   /* .footer-media{
     justify-content: flex-start;
     width:100%;
@@ -306,6 +326,10 @@ a {
     padding: 0.4rem;
   }
 
+  .reason {
+    padding-block: 2rem;
+  }
+
   .form {
     padding: unset;
     padding: 2rem .5rem;
@@ -314,12 +338,18 @@ a {
 
   }
 
+  .reason::before {
+    top: -1.5rem;
+
+
+  }
+
   .form .MuiAutocomplete-root {
     width: 50%
   }
 
   .form picture img {
-    width: 50%
+    width: 50%;
   }
 
   .form>input {
@@ -327,11 +357,19 @@ a {
 
   }
 
-  .photos-cont{
+  .photos-cont {
     justify-content: center;
   }
 
+  .msphoto-cont {
+    column-gap: .5rem;
+    justify-content: center;
 
+  }
+
+  .msphoto-cont img {
+    width: 100%;
+  }
 
 
 
@@ -350,6 +388,7 @@ a {
   .cg-media {
     column-gap: .6rem;
   }
+
 
 }
 
