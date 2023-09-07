@@ -25,11 +25,11 @@ const Information = () => {
     return (
         <section className="information">
             <Logo />
-            <div className="flex cg-3">
-                <div>
-                    <ActionCard width={'23rem'} height={'23rem'} src={displayedCat[0]?.image?.url} />
+            <div className="flex cg-3 flex-wrap">
+                <div className="avatar">
+                    <ActionCard width={'21rem'} height={'21rem'} src={displayedCat[0]?.image?.url} />
                 </div>
-                <div className="flex flex-col row-gap-1 flow-3">
+                <div className="statbar flex flex-col row-gap-2 flow-2" >
                     <h2 style={{ width: '40%' }}>{displayedCat[0]?.name}</h2>
                     <p>{displayedCat[0]?.description}</p>
 
@@ -48,7 +48,7 @@ const Information = () => {
             </div>
             <div className="flow-3">
                 <p className='flow-2'>Other photos</p>
-                <div className="flex flex-wrap  space-btw gap-2">
+                <div className="photos-cont flex flex-wrap  space-btw gap-2">
 
                     {photos.map((photo, index) => (<Link to={photo.url} key={index} style={{ display: 'content' }}><ActionCard width={'17rem'} height={'17rem'} key={photo.id} src={photo.url} /></Link>))}
                 </div>

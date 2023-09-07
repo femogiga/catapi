@@ -235,6 +235,14 @@ a {
 
 }
 
+ .statbar {
+   width: 55%;
+ }
+
+ .avatar {
+   width: 40%;
+ }
+
 @media screen and (max-width: 900px) {
 
 
@@ -252,6 +260,13 @@ a {
   }
 
 
+     .statbar {
+       width: 100%;
+     }
+
+     .avatar {
+       width: 100%;
+     }
 
 
 
@@ -310,6 +325,10 @@ a {
   .form>input {
     width: 5rem;
 
+  }
+
+  .photos-cont{
+    justify-content: center;
   }
 
 

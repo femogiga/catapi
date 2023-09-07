@@ -12,21 +12,37 @@ const Header = (props) => {
     const { selectedOption, setSelectedOption } = props
     const navigate = useNavigate()
     useEffect(() => {
+        // const searchword = selectedOption?.label
+        // const name = selectedOption?.label
+        // const data = { name, searchword }
+        // apiService.create("/cats", data)
+        //     .then(res => res.data)
+        //     .then(res => {
+        //         navigate(`/${selectedOption?.id}`)
+        //     })
+        //     .catch(err => console.error(err))
+    }, [selectedOption])
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
         const searchword = selectedOption?.label
         const name = selectedOption?.label
         const data = { name, searchword }
+        if (name == "" || searchword == "") {
+            return;
+        }
         apiService.create("/cats", data)
             .then(res => res.data)
             .then(res => {
                 navigate(`/${selectedOption?.id}`)
             })
             .catch(err => console.error(err))
-    }, [selectedOption])
 
+    }
     return <header className='header '>
         <Container >
             <Logo />
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
                 <picture>
                     <img src={logoTwo} />
                 </picture>
@@ -39,7 +55,7 @@ const Header = (props) => {
                     renderInput={(params) => <TextField {...params} />}
                     onChange={(event, newValue) => {
                         setSelectedOption(newValue);
-                        console.log(newValue)
+
                     }}
                     value={selectedOption}
                 />
